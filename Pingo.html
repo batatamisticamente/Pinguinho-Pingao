@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Pinguinho Pingão</title>
+    <style>
+        body {
+            background-image: url("Pingo.png");
+        }
+        #Botão {
+            background-color: rgb(71, 86, 125);
+            display: inline-block;
+            height: 10%;
+            width: 15%;
+            position: fixed;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10%;
+            cursor: pointer;
+            top: 50%;
+            right: 60%;
+            transition: 8000ms;
+        }
+        #PP {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-size: 600%;
+            top: -5%;
+            position: fixed;
+            right: 20%;
+        }
+        #Botão:hover {
+            background-color: rgb(54, 65, 95);
+        }
+        #SP {
+            opacity: 0;
+            position: fixed;
+            width: 100%;
+            transition: 8000ms;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body id="body">
+    <img id="SP" src="ScaryPenguim.png"></img>
+    <h1 id="PP">Pinguinho Pingão</h1>
+    <div id="Botão" onclick="Trg()"><h1 id="Junt" style="text-align: center;">Junte-se</h1></div>
+    <script>
+        function Trg() {
+            document.getElementById('Junt').style.display = "none"
+            document.getElementById('Botão').style.width = "1000%"
+            document.getElementById('Botão').style.height = "1000%"
+            document.getElementById('Botão').style.top = "-400%"
+            document.getElementById('Botão').style.right = "-400%"
+            document.getElementById('Botão').style.backgroundColor = "black"
+            document.getElementById('SP').style.opacity = "1"
+            document.getElementById('SP').style.zIndex = "10"
+        }
+        </script>
+</body>
+</html>
